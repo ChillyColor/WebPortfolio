@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "GW-S2k9_rQ204PIQQ",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li class="navbtn"><a href="#home">Home</a></li>
+                <li class="navbtn"><a href="#projects">Projects</a></li>
+                <li class="navbtn"><a href="#about">About</a></li>
+                <li class="navbtn"><a href="resume.html">Resume</a></li>
+                <li class="navbtn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm <span>Aakarsh Divyam</span></h1>
+            <p>Web Developer | Problem Solver | Tech Enthusiast</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                I am a third-year Computer Science student at CMR Institute of Technology with a strong passion for technology and problem-solving.
+                As a competitive programmer, I enjoy tackling challenging problems and continuously improving my coding skills.
+            </p>
+            <p>
+                Currently, I am diving into the world of web development, exploring its vast potential to create impactful digital experiences.
+                With a solid foundation in computer science and an eagerness to learn, I am excited to build innovative solutions and grow as a developer.
+            </p>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <a href="https://chillycolor.github.io/Simons-Game/">
+            <div class="project-card">
+                <img src="assets/prj1.png" alt="Simon's Game">
+                <h3>Simon's Game</h3>
+                <p>This game is a memory challenge where players repeat increasingly complex sequences of colors and sounds.</p>
+            </div>
+        </a>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" onsubmit="sendMail(); return false">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="foot">
+            <a class="lin" href="https://www.linkedin.com/in/aakarsh-divyam-291512309/"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+            <a class="git"href="https://github.com/ChillyColor"><img src="assets/github.png" alt="GitHub"></a>
+            <a class ="lit" href="https://leetcode.com/u/Aakarsh150461/"><img src="assets/code.png" alt="LeetCode"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
